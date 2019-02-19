@@ -1,0 +1,37 @@
+table {
+    width: 100%;
+    border-spacing: 0.6vw 1vw;
+    margin: -0.6vh 0 0vh 0;
+}
+
+.row-orange {
+    height: 10vh;
+}
+
+tr.row-orange > td {
+    background-color: #ffa335;
+}
+
+.row-green {
+    height: 30vh;
+}
+
+tr.row-green > td {
+    background-color: #daec00;
+}
+
+.row-blue {
+    height: 26vh;
+}
+
+tr.row-blue > td {
+    background-color: #4a89d0;
+}
+
+.row-grey {
+    height: 18vh;
+}
+
+tr.row-grey > td {
+    background-color: #e3e3e3;
+}
