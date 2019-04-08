@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Worker</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div>
+        <div>
+            <h3>Add Worker</h3>
+            <form id="addWorker">
+                <input type="text" id="name" placeholder="Name" required="true"/><br/>
+                <input type="text" id="surname" placeholder="Surname" required="true"/><br/>
+                <input type="number" id="age" placeholder="Age" max="100" min="16" value="16"/><br/>
+                <select id="gender">
+                    <option>male</option>
+                    <option>female</option>
+                </select><br/>
+                <input type="text" id="company" placeholder="Company" required="true"/><br/>
+                <input type="number" id="salary" placeholder="Salary" min="0" value="500"/><br/>
+                <div id="extra"></div>
+                <input type="radio" value="1" name="groupWorker" checked="true">Worker</input><br/>
+                <input type="radio" value="2" name="groupWorker">FactoryWorker</input><br/>
+                <input type="radio" value="3" name="groupWorker">TransportWorker</input><br/>
+                <input type="button" onclick="onAddClick(this.form)" value="add"/>
+            </form>
+            <h2>Worker List:</h2>
+            <p><button onclick="downloadXML()">Download XML</button><button onclick="downloadJSON()">Download JSON</button></p>
+            <div id="container">
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/workerApi.js"></script>
+</body>
+</html>
